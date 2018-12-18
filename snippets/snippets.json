@@ -1,0 +1,655 @@
+{
+  "TestResponse": {
+    "prefix": "TestResponse",
+    "body": [
+      " ${1|assertCookie,assertCookieExpired,assertCookieNotExpired,assertCookieMissing,assertDontSee,assertDontSeeText,assertExactJson,assertForbidden,assertHeader,assertHeaderMissing,assertJson,assertJsonCount,assertJsonFragment,assertJsonMissing,assertJsonMissingExact,assertJsonStructure,assertJsonValidationErrors,assertLocation,assertNotFound,assertOk,assertPlainCookie,assertRedirect,assertSee,assertSeeInOrder,assertSeeText,assertSeeTextInOrder,assertSessionHas,assertSessionHasAll,assertSessionHasErrors,assertSessionHasErrorsIn,assertSessionHasNoErrors,assertSessionMissing,assertStatus,assertSuccessful,assertViewHas,assertViewHasAll,assertViewIs,assertViewMissing,decodeResponseJson,viewData,assertSessionDoesntHaveErrors,dump,streamedContent|}$0"
+    ],
+    "description": "List of All TestResponse Methods."
+  },
+  "MakesHttpRequests": {
+    "prefix": "MakesHttpRequests",
+    "body": [
+      " ${1|withHeader,withHeaders,flushHeaders,withServerVariables,withoutMiddleware,withMiddleware,followingRedirects,from,get,getJson,post,postJson,put,putJson,patch,patchJson,delete,deleteJson,json,call|}$0"
+    ],
+    "description": "List of All MakesHttpRequests methods."
+  },
+  "phpunit_basic": {
+    "prefix": "phpunit_basic",
+    "body": [
+      " ${1|assertTrue,assertFalse,assertEquals,assertNotEquals,assertEmpty,assertNotEmpty,assertNull,assertNotNull,assertGreaterThan,assertGreaterThanOrEqual,assertInternalType,assertLessThan,assertLessThanOrEqual,assertNotInternalType,assertNotSame,assertSame|}$0"
+    ],
+    "description": "List of All PHPUNIT Basic Assertions."
+  },
+  "phpunit_array": {
+    "prefix": "phpunit_array",
+    "body": [
+      " ${1|assertArrayHasKey,assertArrayNotHasKey,assertContains,assertContainsOnly,assertCount,assertNotContains,assertNotContainsOnly,assertNotCount|}$0"
+    ],
+    "description": "List of All PHPUNIT Assertion for Arrays and Traversable Objects."
+  },
+  "phpunit_object": {
+    "prefix": "phpunit_object",
+    "body": [
+      " ${1|assertInstanceOf,assertObjectHasAttribute,assertObjectNotHasAttribute,assertNotInstanceOf|}$0"
+    ],
+    "description": "List of All PHPUNIT Assertion for Objects."
+  },
+  "InteractsWithDatabase": {
+    "prefix": "InteractsWithDatabase",
+    "body": [
+      " ${1|assertDatabaseHas,assertDatabaseMissing,assertSoftDeleted,seed|}$0"
+    ],
+    "description": "List of All InteractsWithDatabase Methods."
+  },
+  "phpunit_class_object": {
+    "prefix": "phpunit_class_object",
+    "body": [
+      " ${1|assertAttributeContains,assertAttributeContainsOnly,assertAttributeEmpty,assertAttributeEquals,assertAttributeGreaterThan,assertAttributeGreaterThanOrEqual,assertAttributeInstanceOf,assertAttributeInternalType,assertAttributeLessThan,assertAttributeLessThanOrEqual,assertAttributeNotContains,assertAttributeNotContainsOnly,assertAttributeNotEmpty,assertAttributeNotEquals,assertAttributeNotInstanceOf,assertAttributeNotInternalType,assertAttributeNotSame,assertAttributeSame|}$0"
+    ],
+    "description": "List of PHPUNIT Assertions for Classes and Objects."
+  },
+  "InteractsWithAuthentication": {
+    "prefix": "InteractsWithAuthentication",
+    "body": [
+      " ${1|actingAs,be,assertAuthenticated,assertGuest,assertAuthenticatedAs,assertCredentials,assertInvalidCredentials|}$0"
+    ],
+    "description": "List of All InteractsWithAuthentication Methods"
+  },
+  "InteractsWithExceptionHandling": {
+    "prefix": "InteractsWithExceptionHandling",
+    "body": [
+      " ${1|withExceptionHandling,handleValidationExceptions,withoutExceptionHandling|}$0"
+    ],
+    "description": "List of All InteractsWithExceptionHandling Methods"
+  },
+  "InteractsWithSession": {
+    "prefix": "InteractsWithSession",
+    "body": [" ${1|withSession,flushSession|}$0"],
+    "description": "List of All InteractsWithSession Methods"
+  },
+  "ls_assert_upload": {
+    "prefix": "ls_assert_upload",
+    "body": [" ${1|assertExists,assertMissing|}$0"],
+    "description": "List of All Laravel Upload Assertions"
+  },
+  "InteractsWithConsole": {
+    "prefix": "InteractsWithConsole",
+    "body": [
+      " ${1|expectsQuestion,expectsOutput,artisan,assertExitCode,execute|}$0"
+    ],
+    "description": "List All PendingCommand and InteractsWithConsole Methods."
+  },
+  "ls_assert_string": {
+    "prefix": "ls_assert_string",
+    "body": [
+      " ${1|assertNotRegExp,assertRegExp,assertSelectEquals,assertSelectCount,assertSelectRegExp,assertStringEndsNotWith,assertStringEndsWith,assertStringEqualsFile,assertStringMatchesFormat,assertStringMatchesFormatFile,assertStringNotEqualsFile,assertStringNotMatchesFormat,assertStringNotMatchesFormatFile,assertStringStartsNotWith,assertStringStartsWith|}$0"
+    ],
+    "description": "List All PHPUNIT String Assertions."
+  },
+  "ls_assert_xml_html": {
+    "prefix": "ls_assert_xml_html",
+    "body": [
+      " ${1|assertEqualXMLStructure,assertNotTag,assertTag,assertXmlFileEqualsXmlFile,assertXmlFileNotEqualsXmlFile,assertXmlStringEqualsXmlFile,assertXmlStringEqualsXmlString,assertXmlStringNotEqualsXmlFile,assertXmlStringNotEqualsXmlString|}$0"
+    ],
+    "description": "List All PHPUNIT XML and HTML Assertions."
+  },
+  "ls_assert_files": {
+    "prefix": "ls_assert_files",
+    "body": [
+      " ${1|assertFileEquals,assertFileExists,assertFileNotEquals,assertFileNotExists|}$0"
+    ],
+    "description": "List All PHPUNIT File Assertions."
+  },
+  "ls_tdd_fixture": {
+    "prefix": "ls_tdd_fixture",
+    "body": [" ${1|setUp,tearDown,setUpBeforeClass,tearDownAfterClass|}$0"],
+    "description": "List All TDD Be Verb Actions."
+  },
+  "mtest": {
+    "prefix": "mtest",
+    "body": [
+      "    /** @test */",
+      "    public function ${1:name}()",
+      "    {",
+      "        ${2://Arrange}",
+      "",
+      "        ${3://Act}",
+      "",
+      "        ${4://Assert}",
+      "    }$0"
+    ],
+    "description": "Test Snippet"
+  },
+  "assertCookie": {
+    "prefix": "assertCookie",
+    "body": [
+      "${1|->,$this->,$response->|}assertCookie(${2:\\$cookieName}, ${3:\\$value = null})$0"
+    ],
+    "description": "Assert that the response contains the given cookie."
+  },
+  "assertCookieExpired": {
+    "prefix": "assertCookieExpired",
+    "body": [
+      "${1|->,$this->,$response->|}assertCookieExpired(${2:\\$cookieName})$0"
+    ],
+    "description": "Assert that the response contains the given cookie and it is expired."
+  },
+  "assertCookieNotExpired": {
+    "prefix": "assertCookieNotExpired",
+    "body": [
+      "${1|->,$this->,$response->|}assertCookieNotExpired(${2:\\$cookieName})$0"
+    ],
+    "description": "Assert that the response contains the given cookie and it is not expired."
+  },
+  "assertCookieMissing": {
+    "prefix": "assertCookieMissing",
+    "body": [
+      "${1|->,$this->,$response->|}assertCookieMissing(${2:\\$cookieName})$0"
+    ],
+    "description": "Assert that the response does not contains the given cookie."
+  },
+  "assertDontSee": {
+    "prefix": "assertDontSee",
+    "body": ["${1|->,$this->,$response->|}assertDontSee(${2:\\$value})$0"],
+    "description": "Assert that the given string is not contained within the response."
+  },
+  "assertDontSeeText": {
+    "prefix": "assertDontSeeText",
+    "body": ["${1|->,$this->,$response->|}assertDontSeeText(${2:\\$value})$0"],
+    "description": "Assert that the given string is not contained within the response text."
+  },
+  "assertExactJson": {
+    "prefix": "assertExactJson",
+    "body": [
+      "${1|->,$this->,$response->|}assertExactJson(${2:array \\$data})$0"
+    ],
+    "description": "Assert that the response contains an exact match of the given JSON data."
+  },
+  "assertForbidden": {
+    "prefix": "assertForbidden",
+    "body": ["${1|->,$this->,$response->|}assertForbidden()$0"],
+    "description": "Assert that the response has a forbidden status code."
+  },
+  "assertHeader": {
+    "prefix": "assertHeader",
+    "body": [
+      "${1|->,$this->,$response->|}assertHeader(${2:\\$headerName}, ${3:\\$value = null})$0"
+    ],
+    "description": "Assert that the given header is present on the response."
+  },
+  "assertHeaderMissing": {
+    "prefix": "assertHeaderMissing",
+    "body": [
+      "${1|->,$this->,$response->|}assertHeaderMissing(${2:\\$headerName})$0"
+    ],
+    "description": "Assert that the given header is not present on the response."
+  },
+  "assertJson": {
+    "prefix": "assertJson",
+    "body": ["${1|->,$this->,$response->|}assertJson(${2:array \\$data})$0"],
+    "description": "Assert that the response contains the given JSON data."
+  },
+  "assertJsonCount": {
+    "prefix": "assertJsonCount",
+    "body": [
+      "${1|->,$this->,$response->|}assertJsonCount(${2:\\$count}, ${3:\\$key = null})$0"
+    ],
+    "description": "Assert that the response JSON has an array with the expected number of items at the given key."
+  },
+  "assertJsonFragment": {
+    "prefix": "assertJsonFragment",
+    "body": [
+      "${1|->,$this->,$response->|}assertJsonFragment(${2:array \\$data})$0"
+    ],
+    "description": "Assert that the response contains the given JSON fragment."
+  },
+  "assertJsonMissing": {
+    "prefix": "assertJsonMissing",
+    "body": [
+      "${1|->,$this->,$response->|}assertJsonMissing(${2:array \\$data})$0"
+    ],
+    "description": "Assert that the response does not contain the given JSON fragment."
+  },
+  "assertJsonMissingExact": {
+    "prefix": "assertJsonMissingExact",
+    "body": [
+      "${1|->,$this->,$response->|}assertJsonMissingExact(${2:array \\$data})$0"
+    ],
+    "description": "Assert that the response does not contain the exact JSON fragment."
+  },
+  "assertJsonStructure": {
+    "prefix": "assertJsonStructure",
+    "body": [
+      "${1|->,$this->,$response->|}assertJsonStructure(${2:array $structure})$0"
+    ],
+    "description": "Assert that the response has a given JSON structure."
+  },
+  "assertJsonValidationErrors": {
+    "prefix": "assertJsonValidationErrors",
+    "body": [
+      "${1|->,$this->,$response->|}assertJsonValidationErrors(${2:\\$keys})$0"
+    ],
+    "description": "Assert that the response has the given JSON validation errors for the given keys."
+  },
+  "assertLocation": {
+    "prefix": "assertLocation",
+    "body": ["${1|->,$this->,$response->|}assertLocation(${2:\\$uri})$0"],
+    "description": "Assert that the response has the given URI value in the Location header."
+  },
+  "assertNotFound": {
+    "prefix": "assertNotFound",
+    "body": ["${1|->,$this->,$response->|}assertNotFound()$0"],
+    "description": "Assert that the response has a not found status code."
+  },
+  "assertOk": {
+    "prefix": "assertOk",
+    "body": ["${1|->,$this->,$response->|}assertOk()$0"],
+    "description": "Assert that the response has a 200 status code."
+  },
+  "assertPlainCookie": {
+    "prefix": "assertPlainCookie",
+    "body": [
+      "${1|->,$this->,$response->|}assertPlainCookie(${2:\\$cookieName}, ${3:\\$value = null})$0"
+    ],
+    "description": "Assert that the response contains the given cookie (unencrypted)."
+  },
+  "assertRedirect": {
+    "prefix": "assertRedirect",
+    "body": ["${1|->,$this->,$response->|}assertRedirect(${2:\\$uri})$0"],
+    "description": "Assert that the response is a redirect to a given URI."
+  },
+  "assertSee": {
+    "prefix": "assertSee",
+    "body": ["${1|->,$this->,$response->|}assertSee(${2:\\$value})$0"],
+    "description": "Assert that the given string is contained within the response."
+  },
+  "assertSeeInOrder": {
+    "prefix": "assertSeeInOrder",
+    "body": [
+      "${1|->,$this->,$response->|}assertSeeInOrder(${2:array \\$values})$0"
+    ],
+    "description": "Assert that the given strings are contained in order within the response."
+  },
+  "assertSeeTextInOrder": {
+    "prefix": "assertSeeTextInOrder",
+    "body": [
+      "${1|->,$this->,$response->|}assertSeeTextInOrder(${2:array \\$values})$0"
+    ],
+    "description": "Assert that the given strings are contained in order within the response text."
+  },
+  "assertSessionHas": {
+    "prefix": "assertSessionHas",
+    "body": [
+      "${1|->,$this->,$response->|}assertSessionHas(${2:\\$key}, ${3:\\$value = null})$0"
+    ],
+    "description": "Assert that the session contains the given piece of data."
+  },
+  "assertSessionHasAll": {
+    "prefix": "assertSessionHasAll",
+    "body": [
+      "${1|->,$this->,$response->|}assertSessionHasAll(${2:array \\$data})$0"
+    ],
+    "description": "Assert that the session has a given list of values."
+  },
+  "assertSessionHasErrors": {
+    "prefix": "assertSessionHasErrors",
+    "body": [
+      "${1|->,$this->,$response->|}assertSessionHasErrors(${2:array \\$keys}, ${3:\\$format = null}, ${5:\\$errorBag = 'default'})$0"
+    ],
+    "description": "Assert that the session contains an error for the given field."
+  },
+  "assertSessionHasErrorsIn": {
+    "prefix": "assertSessionHasErrorsIn",
+    "body": [
+      "${1|->,$this->,$response->|}assertSessionHasErrorsIn(${2:\\$errorBag}, ${3:\\$keys = []}, ${4:\\$format = null})$0"
+    ],
+    "description": "Assert that the session has the given errors."
+  },
+  "assertSessionHasNoErrors": {
+    "prefix": "assertSessionHasNoErrors",
+    "body": ["${1|->,$this->,$response->|}assertSessionHasNoErrors()$0"],
+    "description": "Assert that the session has no errors."
+  },
+  "assertSessionMissing": {
+    "prefix": "assertSessionMissing",
+    "body": ["${1|->,$this->,$response->|}assertSessionMissing(${2:\\$key})$0"],
+    "description": "Assert that the session does not contain the given key."
+  },
+  "assertSessionDoesntHaveErrors": {
+    "prefix": "assertSessionDoesntHaveErrors",
+    "body": [
+      "${1|->,$this->,$response->|}assertSessionDoesntHaveErrors(${2:\\$keys = []}, ${3:\\$format = null}, ${4:\\$errorBag = 'default'})$0"
+    ],
+    "description": "Assert that the session does not contain the given key."
+  },
+  "assertStatus": {
+    "prefix": "assertStatus",
+    "body": ["${1|->,$this->,$response->|}assertStatus(${2:\\$code})$0"],
+    "description": "Assert that the response has a given code."
+  },
+  "assertSuccessful": {
+    "prefix": "assertSuccessful",
+    "body": ["${1|->,$this->,$response->|}assertSuccessful()$0"],
+    "description": "Assert that the response has a successful status code."
+  },
+  "assertViewHas": {
+    "prefix": "assertViewHas",
+    "body": [
+      "${1|->,$this->,$response->|}assertViewHas(${2:\\$key}, ${3:\\$value = null})$0"
+    ],
+    "description": "Assert that the response view was given a piece of data."
+  },
+  "viewData": {
+    "prefix": "viewData",
+    "body": ["${1|->,$this->,$response->|}viewData(${2:\\$key})$0"],
+    "description": "Get a piece of data from the original view."
+  },
+  "assertViewHasAll": {
+    "prefix": "assertViewHasAll",
+    "body": [
+      "${1|->,$this->,$response->|}assertViewHasAll(${2:array \\$data})$0"
+    ],
+    "description": "Assert that the response view has a given list of data."
+  },
+  "assertViewIs": {
+    "prefix": "assertViewIs",
+    "body": ["${1|->,$this->,$response->|}assertViewIs(${2:\\$value})$0"],
+    "description": "Assert that the given view was returned by the route."
+  },
+  "assertViewMissing": {
+    "prefix": "assertViewMissing",
+    "body": ["${1|->,$this->,$response->|}assertViewMissing(${2:\\$key})$0"],
+    "description": "Assert that the response view is missing a piece of bound data."
+  },
+  "decodeResponseJson": {
+    "prefix": "decodeResponseJson",
+    "body": [
+      "${1|->,$this->,$response->|}decodeResponseJson(${2:\\$key = null})$0"
+    ],
+    "description": "Assert that the response view is missing a piece of bound data."
+  },
+  "dump": {
+    "prefix": "dump",
+    "body": ["${1|->,$this->,$response->|}dump()$0"],
+    "description": "Dump the content from the response."
+  },
+  "streamedContent": {
+    "prefix": "streamedContent",
+    "body": ["${1|->,$this->,$response->|}streamedContent()$0"],
+    "description": "Get the streamed content from the response."
+  },
+  "assertAuthenticated": {
+    "prefix": "assertAuthenticated",
+    "body": [
+      "${1|->,$this->,$response->|}assertAuthenticated(${2:\\$guard = null})$0"
+    ],
+    "description": "Assert that the user is authenticated."
+  },
+  "assertGuest": {
+    "prefix": "assertGuest",
+    "body": ["${1|->,$this->,$response->|}assertGuest(${2:\\$guard = null})$0"],
+    "description": "Assert that the user is not authenticated."
+  },
+  "assertAuthenticatedAs": {
+    "prefix": "assertAuthenticatedAs",
+    "body": [
+      "${1|->,$this->,$response->|}assertAuthenticatedAs(${2:\\$user}, ${3:\\$guard = null})$0"
+    ],
+    "description": "Assert that the given user is authenticated."
+  },
+  "assertCredentials": {
+    "prefix": "assertCredentials",
+    "body": [
+      "${1|->,$this->,$response->|}assertCredentials(${2:array \\$credentials}, ${3:\\$guard = null})$0"
+    ],
+    "description": "Assert that the given credentials are valid."
+  },
+  "assertInvalidCredentials": {
+    "prefix": "assertInvalidCredentials",
+    "body": [
+      "${1|->,$this->,$response->|}assertInvalidCredentials(${2:array \\$credentials}, ${3:\\$guard = null})$0"
+    ],
+    "description": "Assert that the given credentials are invalid."
+  },
+  "actingAs": {
+    "prefix": "actingAs",
+    "body": [
+      "${1|->,$this->,$response->|}actingAs(${2:\\$user}, ${3:\\$guard = 'api'})$0"
+    ],
+    "description": "Set the currently logged in user for the application."
+  },
+  "withSession": {
+    "prefix": "withSession",
+    "body": [
+      "${1|->,$this->,$response->|}withSession(${2:[${3:\\$key} => ${4:\\$value}]})$0"
+    ],
+    "description": "Set the session to the given array."
+  },
+  "flushSession": {
+    "prefix": "flushSession",
+    "body": ["${1|->,$this->,$response->|}flushSession()$0"],
+    "description": "Flush all of the current session data."
+  },
+  "artisan": {
+    "prefix": "artisan",
+    "body": [
+      "${1|->,$this->,$response->|}artisan(${2:\\$command}, ${3:\\$parameters = []})$0"
+    ],
+    "description": "Call artisan command and return code."
+  },
+  "expectsQuestion": {
+    "prefix": "expectsQuestion",
+    "body": [
+      "${1|->,$this->,$response->|}expectsQuestion(${2:\\$question}, ${3:\\$answer})$0"
+    ],
+    "description": "Test Console Question and Answer."
+  },
+  "expectsOutput": {
+    "prefix": "expectsOutput",
+    "body": ["${1|->,$this->,$response->|}expectsOutput(${2:\\$output})$0"],
+    "description": "Test Console Expected Output."
+  },
+  "assertExitCode": {
+    "prefix": "assertExitCode",
+    "body": [
+      "${1|->,$this->,$response->|}assertExitCode(${2:\\$exitCode = 0})$0"
+    ],
+    "description": "Assert that the command has the given exit code '0'."
+  },
+  "execute": {
+    "prefix": "execute",
+    "body": ["${1|->,$this->,$response->|}execute()$0"],
+    "description": "Execute the command."
+  },
+  "assertDatabaseHas": {
+    "prefix": "assertDatabaseHas",
+    "body": [
+      "${1|->,$this->,$response->|}assertDatabaseHas(${2:\\$table}, ${3:array \\$data}, ${4:\\$connection = null})$0"
+    ],
+    "description": "Assert that a table in the database contains the given data."
+  },
+  "assertDatabaseMissing": {
+    "prefix": "assertDatabaseMissing",
+    "body": [
+      "${1|->,$this->,$response->|}assertDatabaseMissing(${2:\\$table}, ${3:array \\$data}, ${4:\\$connection = null})$0"
+    ],
+    "description": "Assert that a table in the database does not contain the given data."
+  },
+  "assertSoftDeleted": {
+    "prefix": "assertSoftDeleted",
+    "body": [
+      "${1|->,$this->,$response->|}assertSoftDeleted(${2:\\$table}, ${3:array \\$data}, ${4:\\$connection = null})$0"
+    ],
+    "description": "Assert that the given record has been soft deleted."
+  },
+  "seed": {
+    "prefix": "seed",
+    "body": ["\\$this->seed(${1:\\$class = 'DatabaseSeeder'})$0"],
+    "description": "Seed a given database connection."
+  },
+  "withExceptionHandling": {
+    "prefix": "withExceptionHandling",
+    "body": ["${1|->,$this->,$response->|}withExceptionHandling()$0"],
+    "description": "Restore exception handling."
+  },
+  "withoutExceptionHandling": {
+    "prefix": "withoutExceptionHandling",
+    "body": [
+      "${1|->,$this->,$response->|}withoutExceptionHandling(${2:array \\$except = []})$0"
+    ],
+    "description": "Disable exception handling for the test."
+  },
+  "handleValidationExceptions": {
+    "prefix": "handleValidationExceptions",
+    "body": ["${1|->,$this->,$response->|}handleValidationExceptions()$0"],
+    "description": "Only handle validation exceptions via the exception handler."
+  },
+  "withHeaders": {
+    "prefix": "withHeaders",
+    "body": [
+      "${1|->,$this->,$response->|}withHeaders(${2:array \\$headers})$0"
+    ],
+    "description": "Define additional headers to be sent with the request."
+  },
+  "withHeader": {
+    "prefix": "withHeader",
+    "body": [
+      "${1|->,$this->,$response->|}withHeader(${2:string \\$name}, ${3:string \\$value})$0"
+    ],
+    "description": "Add a header to be sent with the request."
+  },
+  "flushHeaders": {
+    "prefix": "flushHeaders",
+    "body": ["${1|->,$this->,$response->|}flushHeaders()$0"],
+    "description": "Add a header to be sent with the request."
+  },
+  "withServerVariables": {
+    "prefix": "withServerVariables",
+    "body": [
+      "${1|->,$this->,$response->|}withServerVariables(${2:array \\$server})$0"
+    ],
+    "description": "Add a header to be sent with the request."
+  },
+  "withoutMiddleware": {
+    "prefix": "withoutMiddleware",
+    "body": [
+      "${1|->,$this->,$response->|}withoutMiddleware(${2:\\$middleware = null})$0"
+    ],
+    "description": "Disable middleware for the test."
+  },
+  "withMiddleware": {
+    "prefix": "withMiddleware",
+    "body": [
+      "${1|->,$this->,$response->|}withMiddleware(${2:\\$middleware = null})$0"
+    ],
+    "description": "Enable the given middleware for the test."
+  },
+  "followingRedirects": {
+    "prefix": "followingRedirects",
+    "body": ["${1|->,$this->,$response->|}followingRedirects()$0"],
+    "description": "Automatically follow any redirects returned from the response."
+  },
+  "from": {
+    "prefix": "from",
+    "body": ["${1|->,$this->,$response->|}from(${2:string \\$url})$0"],
+    "description": "Set the referer header to simulate a previous request."
+  },
+  "get": {
+    "prefix": "get",
+    "body": [
+      "${1|->,$this->,$response->|}get(${2:\\$uri}, ${3:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a GET request."
+  },
+  "getJson": {
+    "prefix": "getJson",
+    "body": [
+      "${1|->,$this->,$response->|}getJson(${2:\\$uri}, ${3:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a GET request, expecting a JSON response."
+  },
+  "post": {
+    "prefix": "post",
+    "body": [
+      "${1|->,$this->,$response->|}post(${2:\\$uri}, ${3:array \\$data = []}, ${4:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a POST request."
+  },
+  "postJson": {
+    "prefix": "post",
+    "body": [
+      "${1|->,$this->,$response->|}postJson(${2:\\$uri}, ${3:array \\$data = []}, ${4:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a POST request, expecting a JSON response."
+  },
+  "put": {
+    "prefix": "put",
+    "body": [
+      "${1|->,$this->,$response->|}put(${2:\\$uri}, ${3:array \\$data = []}, ${4:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a PUT request."
+  },
+  "putJson": {
+    "prefix": "putJson",
+    "body": [
+      "${1|->,$this->,$response->|}putJson(${2:\\$uri}, ${3:array \\$data = []}, ${4:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a PUT request, expecting a JSON response."
+  },
+  "patch": {
+    "prefix": "patch",
+    "body": [
+      "${1|->,$this->,$response->|}patch(${2:\\$uri}, ${3:array \\$data = []}, ${4:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a PATCH request."
+  },
+  "patchJson": {
+    "prefix": "patchJson",
+    "body": [
+      "${1|->,$this->,$response->|}patchJson(${2:\\$uri}, ${3:array \\$data = []}, ${4:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a PATCH request, expecting a JSON response."
+  },
+  "delete": {
+    "prefix": "delete",
+    "body": [
+      "${1|->,$this->,$response->|}delete(${2:\\$uri}, ${3:array \\$data = []}, ${4:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a DELETE request."
+  },
+  "deleteJson": {
+    "prefix": "deleteJson",
+    "body": [
+      "${1|->,$this->,$response->|}deleteJson(${2:\\$uri}, ${3:array \\$data = []}, ${4:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a DELETE request, expecting a JSON response."
+  },
+  "json": {
+    "prefix": "json",
+    "body": [
+      "${1|->,$this->,$response->|}json(${2:\\$method}, ${3:\\$uri}, ${4:array \\$data = []}, ${5:array \\$headers = []})$0"
+    ],
+    "description": "Call the given URI with a JSON request."
+  },
+  "call": {
+    "prefix": "call",
+    "body": [
+      "${1|->,$this->,$response->|}call(${2:\\$method}, ${3:\\$uri}, ${4:\\$parameters = []}, ${5:\\$cookies = []}, ${6:\\$files = []}, ${7:\\$server = []}, ${8:\\$content = null})$0"
+    ],
+    "description": "Call the given URI with a JSON request."
+  },
+  "assertTrue": {
+    "prefix": "assertTrue",
+    "body": [
+      "${1|->,$this->,$response->|}assertTrue(${2:bool true}, ${3:string \\$message = ''})$0"
+    ],
+    "description": "Reports an error identified by $message if $condition is false."
+  },
+  "assertEquals": {
+    "prefix": "assertEquals",
+    "body": [
+      "${1|->,$this->,$response->|}assertEquals(${2:mixed \\$expected}, ${3:mixed \\$actual}, ${4: string \\$message = ''})$0"
+    ],
+    "description": "Reports an error identified by $message if the two variables $expected and $actual are not equal."
+  }
+}
