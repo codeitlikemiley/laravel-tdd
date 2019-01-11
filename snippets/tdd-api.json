@@ -1,0 +1,98 @@
+{
+  "Laravel Test Api Calls": {
+    "prefix": "tdd-api",
+    "body": [
+      " ${1|call,delete,deleteJson,from,get,getJson,json,patch,patchJson,post,postJson,put,putJson|}$0"
+    ],
+    "description": "List of All HTTP Api Call methods."
+  },
+  "call": {
+    "prefix": "call",
+    "body": [
+      "${1|->,$this->,$response->|}call(${2:\\$method}, ${3:\\$uri}, ${4:\\$parameters = []}, ${5:\\$cookies = []}, ${6:\\$files = []}, ${7:\\$server = []}, ${8:\\$content = null})$0"
+    ],
+    "description": "Call the given URI with a JSON request."
+  },
+  "delete": {
+    "prefix": "delete",
+    "body": [
+      "${1|->,$this->,$response->|}delete(${2:\\$uri}, ${3:array \\$data = []}, ${4:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a DELETE request."
+  },
+  "deleteJson": {
+    "prefix": "deleteJson",
+    "body": [
+      "${1|->,$this->,$response->|}deleteJson(${2:\\$uri}, ${3:array \\$data = []}, ${4:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a DELETE request, expecting a JSON response."
+  },
+  "from": {
+    "prefix": "from",
+    "body": ["${1|->,$this->,$response->|}from(${2:string \\$url})$0"],
+    "description": "Set the referer header to simulate a previous request."
+  },
+  "get": {
+    "prefix": "get",
+    "body": [
+      "${1|->,$this->,$response->|}get(${2:\\$uri}, ${3:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a GET request."
+  },
+  "getJson": {
+    "prefix": "getJson",
+    "body": [
+      "${1|->,$this->,$response->|}getJson(${2:\\$uri}, ${3:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a GET request, expecting a JSON response."
+  },
+  "json": {
+    "prefix": "json",
+    "body": [
+      "${1|->,$this->,$response->|}json(${2:\\$method}, ${3:\\$uri}, ${4:array \\$data = []}, ${5:array \\$headers = []})$0"
+    ],
+    "description": "Call the given URI with a JSON request."
+  },
+  "patch": {
+    "prefix": "patch",
+    "body": [
+      "${1|->,$this->,$response->|}patch(${2:\\$uri}, ${3:array \\$data = []}, ${4:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a PATCH request."
+  },
+  "patchJson": {
+    "prefix": "patchJson",
+    "body": [
+      "${1|->,$this->,$response->|}patchJson(${2:\\$uri}, ${3:array \\$data = []}, ${4:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a PATCH request, expecting a JSON response."
+  },
+  "post": {
+    "prefix": "post",
+    "body": [
+      "${1|->,$this->,$response->|}post(${2:\\$uri}, ${3:array \\$data = []}, ${4:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a POST request."
+  },
+  "postJson": {
+    "prefix": "post",
+    "body": [
+      "${1|->,$this->,$response->|}postJson(${2:\\$uri}, ${3:array \\$data = []}, ${4:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a POST request, expecting a JSON response."
+  },
+  "put": {
+    "prefix": "put",
+    "body": [
+      "${1|->,$this->,$response->|}put(${2:\\$uri}, ${3:array \\$data = []}, ${4:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a PUT request."
+  },
+  "putJson": {
+    "prefix": "putJson",
+    "body": [
+      "${1|->,$this->,$response->|}putJson(${2:\\$uri}, ${3:array \\$data = []}, ${4:array \\$headers = []})$0"
+    ],
+    "description": "Visit the given URI with a PUT request, expecting a JSON response."
+  }
+}

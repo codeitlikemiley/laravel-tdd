@@ -1,20 +1,84 @@
 {
-    "name": "laravel-tdd",
-    "displayName": "laravel-tdd",
-    "description": "",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.30.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "php",
-                "path": "./snippets/snippets.json"
-            }
-        ]
-    }
+  "name": "laravel-tdd",
+  "displayName": "laravel-tdd",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "php",
+        "path": "./snippets/pu-array.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/pu-basic.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/pu-class-object.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/pu-fixture.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/pu-object.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/pu-string.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/pu-upload.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/pu-xml-html.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/tdd-api.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/tdd-auth.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/tdd-console.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/tdd-custom.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/tdd-db.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/tdd-exception.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/tdd-requests.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/tdd-responses.json"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/tdd-session.json"
+      }
+    ]
+  }
 }

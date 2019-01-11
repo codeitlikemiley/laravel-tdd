@@ -1,0 +1,9 @@
+{
+  "PHP Unit Class Object Assertions": {
+    "prefix": "pu-class-object",
+    "body": [
+      " ${1|assertAttributeContains,assertAttributeContainsOnly,assertAttributeEmpty,assertAttributeEquals,assertAttributeGreaterThan,assertAttributeGreaterThanOrEqual,assertAttributeInstanceOf,assertAttributeInternalType,assertAttributeLessThan,assertAttributeLessThanOrEqual,assertAttributeNotContains,assertAttributeNotContainsOnly,assertAttributeNotEmpty,assertAttributeNotEquals,assertAttributeNotInstanceOf,assertAttributeNotInternalType,assertAttributeNotSame,assertAttributeSame|}$0"
+    ],
+    "description": "List of PHPUNIT Assertions for Classes and Objects."
+  }
+}

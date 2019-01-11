@@ -1,0 +1,9 @@
+{
+  "PHP Unit Files Assertions": {
+    "prefix": "pu-files",
+    "body": [
+      " ${1|assertFileEquals,assertFileExists,assertFileNotEquals,assertFileNotExists|}$0"
+    ],
+    "description": "List All PHPUNIT File Assertions."
+  }
+}

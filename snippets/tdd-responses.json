@@ -1,0 +1,267 @@
+{
+  "Laravel Test Responses": {
+    "prefix": "tdd-responses",
+    "body": [
+      " ${1|assertCookie,assertCookieExpired,assertCookieNotExpired,assertCookieMissing,assertDontSee,assertDontSeeText,assertExactJson,assertForbidden,assertHeader,assertHeaderMissing,assertJson,assertJsonCount,assertJsonFragment,assertJsonMissing,assertJsonMissingExact,assertJsonStructure,assertJsonValidationErrors,assertLocation,assertNotFound,assertOk,assertPlainCookie,assertRedirect,assertSee,assertSeeInOrder,assertSeeText,assertSeeTextInOrder,assertSessionHas,assertSessionHasAll,assertSessionHasErrors,assertSessionHasErrorsIn,assertSessionHasNoErrors,assertSessionMissing,assertStatus,assertSuccessful,assertViewHas,assertViewHasAll,assertViewIs,assertViewMissing,decodeResponseJson,viewData,assertSessionDoesntHaveErrors,dump,streamedContent|}$0"
+    ],
+    "description": "List of All TestResponse Methods."
+  },
+  "assertCookie": {
+    "prefix": "assertCookie",
+    "body": [
+      "${1|->,$this->,$response->|}assertCookie(${2:\\$cookieName}, ${3:\\$value = null})$0"
+    ],
+    "description": "Assert that the response contains the given cookie."
+  },
+  "assertCookieExpired": {
+    "prefix": "assertCookieExpired",
+    "body": [
+      "${1|->,$this->,$response->|}assertCookieExpired(${2:\\$cookieName})$0"
+    ],
+    "description": "Assert that the response contains the given cookie and it is expired."
+  },
+  "assertCookieNotExpired": {
+    "prefix": "assertCookieNotExpired",
+    "body": [
+      "${1|->,$this->,$response->|}assertCookieNotExpired(${2:\\$cookieName})$0"
+    ],
+    "description": "Assert that the response contains the given cookie and it is not expired."
+  },
+  "assertCookieMissing": {
+    "prefix": "assertCookieMissing",
+    "body": [
+      "${1|->,$this->,$response->|}assertCookieMissing(${2:\\$cookieName})$0"
+    ],
+    "description": "Assert that the response does not contains the given cookie."
+  },
+  "assertDontSee": {
+    "prefix": "assertDontSee",
+    "body": ["${1|->,$this->,$response->|}assertDontSee(${2:\\$value})$0"],
+    "description": "Assert that the given string is not contained within the response."
+  },
+  "assertDontSeeText": {
+    "prefix": "assertDontSeeText",
+    "body": ["${1|->,$this->,$response->|}assertDontSeeText(${2:\\$value})$0"],
+    "description": "Assert that the given string is not contained within the response text."
+  },
+  "assertExactJson": {
+    "prefix": "assertExactJson",
+    "body": [
+      "${1|->,$this->,$response->|}assertExactJson(${2:array \\$data})$0"
+    ],
+    "description": "Assert that the response contains an exact match of the given JSON data."
+  },
+  "assertForbidden": {
+    "prefix": "assertForbidden",
+    "body": ["${1|->,$this->,$response->|}assertForbidden()$0"],
+    "description": "Assert that the response has a forbidden status code."
+  },
+  "assertHeader": {
+    "prefix": "assertHeader",
+    "body": [
+      "${1|->,$this->,$response->|}assertHeader(${2:\\$headerName}, ${3:\\$value = null})$0"
+    ],
+    "description": "Assert that the given header is present on the response."
+  },
+  "assertHeaderMissing": {
+    "prefix": "assertHeaderMissing",
+    "body": [
+      "${1|->,$this->,$response->|}assertHeaderMissing(${2:\\$headerName})$0"
+    ],
+    "description": "Assert that the given header is not present on the response."
+  },
+  "assertJson": {
+    "prefix": "assertJson",
+    "body": ["${1|->,$this->,$response->|}assertJson(${2:array \\$data})$0"],
+    "description": "Assert that the response contains the given JSON data."
+  },
+  "assertJsonCount": {
+    "prefix": "assertJsonCount",
+    "body": [
+      "${1|->,$this->,$response->|}assertJsonCount(${2:\\$count}, ${3:\\$key = null})$0"
+    ],
+    "description": "Assert that the response JSON has an array with the expected number of items at the given key."
+  },
+  "assertJsonFragment": {
+    "prefix": "assertJsonFragment",
+    "body": [
+      "${1|->,$this->,$response->|}assertJsonFragment(${2:array \\$data})$0"
+    ],
+    "description": "Assert that the response contains the given JSON fragment."
+  },
+  "assertJsonMissing": {
+    "prefix": "assertJsonMissing",
+    "body": [
+      "${1|->,$this->,$response->|}assertJsonMissing(${2:array \\$data})$0"
+    ],
+    "description": "Assert that the response does not contain the given JSON fragment."
+  },
+  "assertJsonMissingExact": {
+    "prefix": "assertJsonMissingExact",
+    "body": [
+      "${1|->,$this->,$response->|}assertJsonMissingExact(${2:array \\$data})$0"
+    ],
+    "description": "Assert that the response does not contain the exact JSON fragment."
+  },
+  "assertJsonStructure": {
+    "prefix": "assertJsonStructure",
+    "body": [
+      "${1|->,$this->,$response->|}assertJsonStructure(${2:array $structure})$0"
+    ],
+    "description": "Assert that the response has a given JSON structure."
+  },
+  "assertJsonValidationErrors": {
+    "prefix": "assertJsonValidationErrors",
+    "body": [
+      "${1|->,$this->,$response->|}assertJsonValidationErrors(${2:\\$keys})$0"
+    ],
+    "description": "Assert that the response has the given JSON validation errors for the given keys."
+  },
+  "assertLocation": {
+    "prefix": "assertLocation",
+    "body": ["${1|->,$this->,$response->|}assertLocation(${2:\\$uri})$0"],
+    "description": "Assert that the response has the given URI value in the Location header."
+  },
+  "assertNotFound": {
+    "prefix": "assertNotFound",
+    "body": ["${1|->,$this->,$response->|}assertNotFound()$0"],
+    "description": "Assert that the response has a not found status code."
+  },
+  "assertOk": {
+    "prefix": "assertOk",
+    "body": ["${1|->,$this->,$response->|}assertOk()$0"],
+    "description": "Assert that the response has a 200 status code."
+  },
+  "assertPlainCookie": {
+    "prefix": "assertPlainCookie",
+    "body": [
+      "${1|->,$this->,$response->|}assertPlainCookie(${2:\\$cookieName}, ${3:\\$value = null})$0"
+    ],
+    "description": "Assert that the response contains the given cookie (unencrypted)."
+  },
+  "assertRedirect": {
+    "prefix": "assertRedirect",
+    "body": ["${1|->,$this->,$response->|}assertRedirect(${2:\\$uri})$0"],
+    "description": "Assert that the response is a redirect to a given URI."
+  },
+  "assertSee": {
+    "prefix": "assertSee",
+    "body": ["${1|->,$this->,$response->|}assertSee(${2:\\$value})$0"],
+    "description": "Assert that the given string is contained within the response."
+  },
+  "assertSeeInOrder": {
+    "prefix": "assertSeeInOrder",
+    "body": [
+      "${1|->,$this->,$response->|}assertSeeInOrder(${2:array \\$values})$0"
+    ],
+    "description": "Assert that the given strings are contained in order within the response."
+  },
+  "assertSeeTextInOrder": {
+    "prefix": "assertSeeTextInOrder",
+    "body": [
+      "${1|->,$this->,$response->|}assertSeeTextInOrder(${2:array \\$values})$0"
+    ],
+    "description": "Assert that the given strings are contained in order within the response text."
+  },
+  "assertSessionHas": {
+    "prefix": "assertSessionHas",
+    "body": [
+      "${1|->,$this->,$response->|}assertSessionHas(${2:\\$key}, ${3:\\$value = null})$0"
+    ],
+    "description": "Assert that the session contains the given piece of data."
+  },
+  "assertSessionHasAll": {
+    "prefix": "assertSessionHasAll",
+    "body": [
+      "${1|->,$this->,$response->|}assertSessionHasAll(${2:array \\$data})$0"
+    ],
+    "description": "Assert that the session has a given list of values."
+  },
+  "assertSessionHasErrors": {
+    "prefix": "assertSessionHasErrors",
+    "body": [
+      "${1|->,$this->,$response->|}assertSessionHasErrors(${2:array \\$keys}, ${3:\\$format = null}, ${5:\\$errorBag = 'default'})$0"
+    ],
+    "description": "Assert that the session contains an error for the given field."
+  },
+  "assertSessionHasErrorsIn": {
+    "prefix": "assertSessionHasErrorsIn",
+    "body": [
+      "${1|->,$this->,$response->|}assertSessionHasErrorsIn(${2:\\$errorBag}, ${3:\\$keys = []}, ${4:\\$format = null})$0"
+    ],
+    "description": "Assert that the session has the given errors."
+  },
+  "assertSessionHasNoErrors": {
+    "prefix": "assertSessionHasNoErrors",
+    "body": ["${1|->,$this->,$response->|}assertSessionHasNoErrors()$0"],
+    "description": "Assert that the session has no errors."
+  },
+  "assertSessionMissing": {
+    "prefix": "assertSessionMissing",
+    "body": ["${1|->,$this->,$response->|}assertSessionMissing(${2:\\$key})$0"],
+    "description": "Assert that the session does not contain the given key."
+  },
+  "assertSessionDoesntHaveErrors": {
+    "prefix": "assertSessionDoesntHaveErrors",
+    "body": [
+      "${1|->,$this->,$response->|}assertSessionDoesntHaveErrors(${2:\\$keys = []}, ${3:\\$format = null}, ${4:\\$errorBag = 'default'})$0"
+    ],
+    "description": "Assert that the session does not contain the given key."
+  },
+  "assertStatus": {
+    "prefix": "assertStatus",
+    "body": ["${1|->,$this->,$response->|}assertStatus(${2:\\$code})$0"],
+    "description": "Assert that the response has a given code."
+  },
+  "assertSuccessful": {
+    "prefix": "assertSuccessful",
+    "body": ["${1|->,$this->,$response->|}assertSuccessful()$0"],
+    "description": "Assert that the response has a successful status code."
+  },
+  "assertViewHas": {
+    "prefix": "assertViewHas",
+    "body": [
+      "${1|->,$this->,$response->|}assertViewHas(${2:\\$key}, ${3:\\$value = null})$0"
+    ],
+    "description": "Assert that the response view was given a piece of data."
+  },
+  "viewData": {
+    "prefix": "viewData",
+    "body": ["${1|->,$this->,$response->|}viewData(${2:\\$key})$0"],
+    "description": "Get a piece of data from the original view."
+  },
+  "assertViewHasAll": {
+    "prefix": "assertViewHasAll",
+    "body": [
+      "${1|->,$this->,$response->|}assertViewHasAll(${2:array \\$data})$0"
+    ],
+    "description": "Assert that the response view has a given list of data."
+  },
+  "assertViewIs": {
+    "prefix": "assertViewIs",
+    "body": ["${1|->,$this->,$response->|}assertViewIs(${2:\\$value})$0"],
+    "description": "Assert that the given view was returned by the route."
+  },
+  "assertViewMissing": {
+    "prefix": "assertViewMissing",
+    "body": ["${1|->,$this->,$response->|}assertViewMissing(${2:\\$key})$0"],
+    "description": "Assert that the response view is missing a piece of bound data."
+  },
+  "decodeResponseJson": {
+    "prefix": "decodeResponseJson",
+    "body": [
+      "${1|->,$this->,$response->|}decodeResponseJson(${2:\\$key = null})$0"
+    ],
+    "description": "Assert that the response view is missing a piece of bound data."
+  },
+  "dump": {
+    "prefix": "dump",
+    "body": ["${1|->,$this->,$response->|}dump()$0"],
+    "description": "Dump the content from the response."
+  },
+  "streamedContent": {
+    "prefix": "streamedContent",
+    "body": ["${1|->,$this->,$response->|}streamedContent()$0"],
+    "description": "Get the streamed content from the response."
+  }
+}

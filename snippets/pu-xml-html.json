@@ -1,0 +1,9 @@
+{
+  "PHP Unit XML HTML Assertions": {
+    "prefix": "pu-xml-html",
+    "body": [
+      " ${1|assertEqualXMLStructure,assertNotTag,assertTag,assertXmlFileEqualsXmlFile,assertXmlFileNotEqualsXmlFile,assertXmlStringEqualsXmlFile,assertXmlStringEqualsXmlString,assertXmlStringNotEqualsXmlFile,assertXmlStringNotEqualsXmlString|}$0"
+    ],
+    "description": "List All PHPUNIT XML and HTML Assertions."
+  }
+}

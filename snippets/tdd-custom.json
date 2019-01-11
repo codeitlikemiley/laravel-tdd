@@ -1,0 +1,67 @@
+{
+  "Make Public Test Method": {
+    "prefix": "tdd:met",
+    "body": [
+      "    /** @test */",
+      "    public function ${1:name}()",
+      "    {",
+      "        ${2://Arrange}",
+      "",
+      "        ${3://Act}",
+      "",
+      "        ${4://Assert}",
+      "    }$0"
+    ],
+    "description": "Test Snippet"
+  },
+  "Make Private Test Method": {
+    "prefix": "tdd:_met",
+    "body": [
+      "    /** @test */",
+      "    private function ${1:name}()",
+      "    {",
+      "        ${2://Arrange}",
+      "",
+      "        ${3://Act}",
+      "",
+      "        ${4://Assert}",
+      "    }$0"
+    ],
+    "description": "Test Snippet"
+  },
+  "assertTrue": {
+    "prefix": "tdd:true",
+    "body": [
+      "${1|->,$this->,$response->|}assertTrue(${2:bool true}, ${3:string \\$message = ''})$0"
+    ],
+    "description": "Reports an error identified by $message if $condition is false."
+  },
+  "assertEquals": {
+    "prefix": "tdd:equals",
+    "body": [
+      "${1|->,$this->,$response->|}assertEquals(${2:mixed \\$expected}, ${3:mixed \\$actual}, ${4: string \\$message = ''})$0"
+    ],
+    "description": "Reports an error identified by $message if the two variables $expected and $actual are not equal."
+  },
+  "Passport Acting As": {
+    "prefix": "tdd:passport",
+    "body": [
+      "Passport::actingAs(${1|factory(User::class)->create(),$user|}, ${2:array \\$scopes = []})$0"
+    ],
+    "description": "Reports an error identified by $message if $condition is false."
+  },
+  "Factory Merge": {
+    "prefix": "tdd:factory-merge",
+    "body": [
+      "\\$factory->defineAs(${1:User::class}, ${2:'type'}, function (\\$faker) use (\\$factory) {",
+      "    \\$user = \\$factory->raw($1);",
+      "",
+      "    return array_merge(",
+      "        \\$user,",
+      "        [$2 => true]",
+      "    );",
+      "});$0"
+    ],
+    "description": "Reports an error identified by $message if $condition is false."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "PHP Unit Object Assertions": {
+    "prefix": "pu-object",
+    "body": [
+      " ${1|assertInstanceOf,assertObjectHasAttribute,assertObjectNotHasAttribute,assertNotInstanceOf|}$0"
+    ],
+    "description": "List of All PHPUNIT Assertion for Objects."
+  }
+}

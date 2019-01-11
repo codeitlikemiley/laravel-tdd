@@ -1,0 +1,9 @@
+{
+  "PHP Unit Basic Assertions": {
+    "prefix": "pu-basic",
+    "body": [
+      " ${1|assertTrue,assertFalse,assertEquals,assertNotEquals,assertEmpty,assertNotEmpty,assertNull,assertNotNull,assertGreaterThan,assertGreaterThanOrEqual,assertInternalType,assertLessThan,assertLessThanOrEqual,assertNotInternalType,assertNotSame,assertSame|}$0"
+    ],
+    "description": "List of All PHPUNIT Basic Assertions."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "InteractsWithExceptionHandling": {
+    "prefix": "tdd-exception",
+    "body": [
+      " ${1|handleValidationExceptions,withExceptionHandling,withoutExceptionHandling|}$0"
+    ],
+    "description": "List of All InteractsWithExceptionHandling Methods"
+  },
+  "handleValidationExceptions": {
+    "prefix": "handleValidationExceptions",
+    "body": ["${1|->,$this->,$response->|}handleValidationExceptions()$0"],
+    "description": "Only handle validation exceptions via the exception handler."
+  },
+  "withExceptionHandling": {
+    "prefix": "withExceptionHandling",
+    "body": ["${1|->,$this->,$response->|}withExceptionHandling()$0"],
+    "description": "Restore exception handling."
+  },
+  "withoutExceptionHandling": {
+    "prefix": "withoutExceptionHandling",
+    "body": [
+      "${1|->,$this->,$response->|}withoutExceptionHandling(${2:array \\$except = []})$0"
+    ],
+    "description": "Disable exception handling for the test."
+  }
+}

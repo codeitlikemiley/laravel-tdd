@@ -1,0 +1,49 @@
+{
+  "InteractsWithAuthentication": {
+    "prefix": "tdd-auth",
+    "body": [
+      " ${1|actingAs,assertAuthenticated,assertGuest,assertAuthenticatedAs,assertCredentials,assertInvalidCredentials|}$0"
+    ],
+    "description": "List of All InteractsWithAuthentication Methods"
+  },
+  "actingAs": {
+    "prefix": "actingAs",
+    "body": [
+      "${1|->,$this->,$response->|}actingAs(${2:\\$user}, ${3:\\$guard = 'api'})$0"
+    ],
+    "description": "Set the currently logged in user for the application."
+  },
+  "assertAuthenticated": {
+    "prefix": "assertAuthenticated",
+    "body": [
+      "${1|->,$this->,$response->|}assertAuthenticated(${2:\\$guard = null})$0"
+    ],
+    "description": "Assert that the user is authenticated."
+  },
+  "assertGuest": {
+    "prefix": "assertGuest",
+    "body": ["${1|->,$this->,$response->|}assertGuest(${2:\\$guard = null})$0"],
+    "description": "Assert that the user is not authenticated."
+  },
+  "assertAuthenticatedAs": {
+    "prefix": "assertAuthenticatedAs",
+    "body": [
+      "${1|->,$this->,$response->|}assertAuthenticatedAs(${2:\\$user}, ${3:\\$guard = null})$0"
+    ],
+    "description": "Assert that the given user is authenticated."
+  },
+  "assertCredentials": {
+    "prefix": "assertCredentials",
+    "body": [
+      "${1|->,$this->,$response->|}assertCredentials(${2:array \\$credentials}, ${3:\\$guard = null})$0"
+    ],
+    "description": "Assert that the given credentials are valid."
+  },
+  "assertInvalidCredentials": {
+    "prefix": "assertInvalidCredentials",
+    "body": [
+      "${1|->,$this->,$response->|}assertInvalidCredentials(${2:array \\$credentials}, ${3:\\$guard = null})$0"
+    ],
+    "description": "Assert that the given credentials are invalid."
+  }
+}

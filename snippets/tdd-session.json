@@ -1,0 +1,19 @@
+{
+  "InteractsWithSession": {
+    "prefix": "tdd-session",
+    "body": [" ${1|withSession,flushSession|}$0"],
+    "description": "List of All InteractsWithSession Methods"
+  },
+  "withSession": {
+    "prefix": "withSession",
+    "body": [
+      "${1|->,$this->,$response->|}withSession(${2:[${3:\\$key} => ${4:\\$value}]})$0"
+    ],
+    "description": "Set the session to the given array."
+  },
+  "flushSession": {
+    "prefix": "flushSession",
+    "body": ["${1|->,$this->,$response->|}flushSession()$0"],
+    "description": "Flush all of the current session data."
+  }
+}

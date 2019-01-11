@@ -1,0 +1,7 @@
+{
+  "PHP Unit Uploads Assertions": {
+    "prefix": "pu-upload",
+    "body": [" ${1|assertExists,assertMissing|}$0"],
+    "description": "List of All Laravel Upload Assertions"
+  }
+}

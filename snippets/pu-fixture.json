@@ -1,0 +1,7 @@
+{
+  "PHP Unit Fixtures": {
+    "prefix": "pu-fixture",
+    "body": [" ${1|setUp,tearDown,setUpBeforeClass,tearDownAfterClass|}$0"],
+    "description": "List All PHP Unit Fixtures."
+  }
+}

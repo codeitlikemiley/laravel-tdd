@@ -1,0 +1,9 @@
+{
+  "PHP Unit String Assertions": {
+    "prefix": "pu-string",
+    "body": [
+      " ${1|assertNotRegExp,assertRegExp,assertSelectEquals,assertSelectCount,assertSelectRegExp,assertStringEndsNotWith,assertStringEndsWith,assertStringEqualsFile,assertStringMatchesFormat,assertStringMatchesFormatFile,assertStringNotEqualsFile,assertStringNotMatchesFormat,assertStringNotMatchesFormatFile,assertStringStartsNotWith,assertStringStartsWith|}$0"
+    ],
+    "description": "List All PHPUNIT String Assertions."
+  }
+}

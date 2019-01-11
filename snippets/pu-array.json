@@ -1,0 +1,9 @@
+{
+  "PHP Unit Array Assertions": {
+    "prefix": "pu-array",
+    "body": [
+      " ${1|assertArrayHasKey,assertArrayNotHasKey,assertContains,assertContainsOnly,assertCount,assertNotContains,assertNotContainsOnly,assertNotCount|}$0"
+    ],
+    "description": "List of All PHPUNIT Assertion for Arrays and Traversable Objects."
+  }
+}

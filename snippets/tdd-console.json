@@ -1,0 +1,40 @@
+{
+  "InteractsWithConsole": {
+    "prefix": "tdd-console",
+    "body": [
+      " ${1|artisan,assertExitCode,execute,expectsOutput,expectsQuestion|}$0"
+    ],
+    "description": "List All PendingCommand and InteractsWithConsole Methods."
+  },
+  "artisan": {
+    "prefix": "artisan",
+    "body": [
+      "${1|->,$this->,$response->|}artisan(${2:\\$command}, ${3:\\$parameters = []})$0"
+    ],
+    "description": "Call artisan command and return code."
+  },
+  "assertExitCode": {
+    "prefix": "assertExitCode",
+    "body": [
+      "${1|->,$this->,$response->|}assertExitCode(${2:\\$exitCode = 0})$0"
+    ],
+    "description": "Assert that the command has the given exit code '0'."
+  },
+  "execute": {
+    "prefix": "execute",
+    "body": ["${1|->,$this->,$response->|}execute()$0"],
+    "description": "Execute the command."
+  },
+  "expectsOutput": {
+    "prefix": "expectsOutput",
+    "body": ["${1|->,$this->,$response->|}expectsOutput(${2:\\$output})$0"],
+    "description": "Test Console Expected Output."
+  },
+  "expectsQuestion": {
+    "prefix": "expectsQuestion",
+    "body": [
+      "${1|->,$this->,$response->|}expectsQuestion(${2:\\$question}, ${3:\\$answer})$0"
+    ],
+    "description": "Test Console Question and Answer."
+  }
+}

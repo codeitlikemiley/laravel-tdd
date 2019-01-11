@@ -1,0 +1,35 @@
+{
+  "InteractsWithDatabase": {
+    "prefix": "tdd-db",
+    "body": [
+      " ${1|assertDatabaseHas,assertDatabaseMissing,assertSoftDeleted,seed|}$0"
+    ],
+    "description": "List of All InteractsWithDatabase Methods."
+  },
+  "assertDatabaseHas": {
+    "prefix": "assertDatabaseHas",
+    "body": [
+      "${1|->,$this->,$response->|}assertDatabaseHas(${2:\\$table}, ${3:array \\$data}, ${4:\\$connection = null})$0"
+    ],
+    "description": "Assert that a table in the database contains the given data."
+  },
+  "assertDatabaseMissing": {
+    "prefix": "assertDatabaseMissing",
+    "body": [
+      "${1|->,$this->,$response->|}assertDatabaseMissing(${2:\\$table}, ${3:array \\$data}, ${4:\\$connection = null})$0"
+    ],
+    "description": "Assert that a table in the database does not contain the given data."
+  },
+  "assertSoftDeleted": {
+    "prefix": "assertSoftDeleted",
+    "body": [
+      "${1|->,$this->,$response->|}assertSoftDeleted(${2:\\$table}, ${3:array \\$data}, ${4:\\$connection = null})$0"
+    ],
+    "description": "Assert that the given record has been soft deleted."
+  },
+  "seed": {
+    "prefix": "seed",
+    "body": ["\\$this->seed(${1:\\$class = 'DatabaseSeeder'})$0"],
+    "description": "Seed a given database connection."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "Laravel Test Request": {
+    "prefix": "tdd-requests",
+    "body": [
+      " ${1|withHeader,withHeaders,flushHeaders,withServerVariables,withoutMiddleware,withMiddleware,followingRedirects|}$0"
+    ],
+    "description": "List of All MakesHttpRequests methods."
+  },
+  "withHeader": {
+    "prefix": "withHeader",
+    "body": [
+      "${1|->,$this->,$response->|}withHeader(${2:string \\$name}, ${3:string \\$value})$0"
+    ],
+    "description": "Add a header to be sent with the request."
+  },
+  "withHeaders": {
+    "prefix": "withHeaders",
+    "body": [
+      "${1|->,$this->,$response->|}withHeaders(${2:array \\$headers})$0"
+    ],
+    "description": "Define additional headers to be sent with the request."
+  },
+  "flushHeaders": {
+    "prefix": "flushHeaders",
+    "body": ["${1|->,$this->,$response->|}flushHeaders()$0"],
+    "description": "Add a header to be sent with the request."
+  },
+  "withServerVariables": {
+    "prefix": "withServerVariables",
+    "body": [
+      "${1|->,$this->,$response->|}withServerVariables(${2:array \\$server})$0"
+    ],
+    "description": "Add a header to be sent with the request."
+  },
+  "withoutMiddleware": {
+    "prefix": "withoutMiddleware",
+    "body": [
+      "${1|->,$this->,$response->|}withoutMiddleware(${2:\\$middleware = null})$0"
+    ],
+    "description": "Disable middleware for the test."
+  },
+  "withMiddleware": {
+    "prefix": "withMiddleware",
+    "body": [
+      "${1|->,$this->,$response->|}withMiddleware(${2:\\$middleware = null})$0"
+    ],
+    "description": "Enable the given middleware for the test."
+  },
+  "followingRedirects": {
+    "prefix": "followingRedirects",
+    "body": ["${1|->,$this->,$response->|}followingRedirects()$0"],
+    "description": "Automatically follow any redirects returned from the response."
+  }
+}
