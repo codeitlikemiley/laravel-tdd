@@ -3,7 +3,8 @@
   "publisher": "codeitlikemiley",
   "displayName": "laravel-tdd",
   "description": "",
-  "version": "0.1.0",
+  "repository": "https://github.com/codeitlikemiley/laravel-tdd",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.30.0"
   },

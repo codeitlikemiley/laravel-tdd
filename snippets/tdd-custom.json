@@ -1,24 +1,9 @@
 {
   "Make Public Test Method": {
-    "prefix": "tdd:met",
+    "prefix": "test_",
     "body": [
       "    /** @test */",
       "    public function ${1:name}()",
-      "    {",
-      "        ${2://Arrange}",
-      "",
-      "        ${3://Act}",
-      "",
-      "        ${4://Assert}",
-      "    }$0"
-    ],
-    "description": "Test Snippet"
-  },
-  "Make Private Test Method": {
-    "prefix": "tdd:_met",
-    "body": [
-      "    /** @test */",
-      "    private function ${1:name}()",
       "    {",
       "        ${2://Arrange}",
       "",
