@@ -27,8 +27,7 @@ pu-xml-html
 # List of all Custom TDD methods
 
 ```
-tdd:met
-tdd:_met
+test_
 tdd:true
 tdd:equals
 tdd:passport
