@@ -4,7 +4,7 @@
   "displayName": "laravel-tdd",
   "description": "",
   "repository": "https://github.com/codeitlikemiley/laravel-tdd",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "engines": {
     "vscode": "^1.30.0"
   },
