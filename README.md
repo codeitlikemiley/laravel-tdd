@@ -42,8 +42,6 @@ tdd:factory-merge
 
 2. A list of Prefixes will be Dropdown for you to Select With.
 3. Use Arrow Key To Select A Prefix then Enter
-
-   Note:
-   `Due to the limitation of Vscode Snippets , After Selecting The Prefix , You need to press backspace (deleting the last character) then re-entering the last character will show you the auto completion for that specific snippet`
-
+4. Press CTRL + Space to Show The Snippets You Selected
+5. EDIT what you want to Edit on the Snippets
 **Enjoy!**
